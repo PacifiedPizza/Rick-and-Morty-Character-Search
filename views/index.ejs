@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <h1>Rick and Morty Character Search</h1>
+            <form id="searchForm" method="GET" action="/submit">
+                <div class="search-bar">
+                    <label for="characterName">Character Name:</label>
+                    <input type="text" id="characterName" name="characterName" placeholder="Search by name">
+                </div>
+                <div class="filter-options">
+                    <label for="status">Status:</label>
+                    <select id="status" name="status">
+                        <option value="">Select</option>
+                        <option value="alive">Alive</option>
+                        <option value="dead">Dead</option>
+                        <option value="unknown">Unknown</option>
+                    </select>
+
+                    <label for="species">Species:</label>
+                    <select id="species" name="species">
+                        <option value="">Select</option>
+                        <option value="human">Human</option>
+                        <option value="alien">Alien</option>
+                    </select>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="">Select</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="genderless">Genderless</option>
+                        <option value="unknown">Unknown</option>
+                    </select>
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
